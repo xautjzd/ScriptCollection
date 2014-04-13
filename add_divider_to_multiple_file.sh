@@ -12,6 +12,6 @@ do
 		line=$(awk NR==$NUM $file)  # Get content of the line 8
 		if [[ $line != *"---"* ]];  # If the specified line doesn't contain '---', then add '---'
 		then
-				sed -i "$NUM i---" $file; # -i: apply the result to original file. Insert a new line before the pattern with the "i" command
+				sed -i "$NUM i ---" $file; # -i: apply the result to original file. Insert a new line before the pattern with the "i" command
 		fi;
 done
